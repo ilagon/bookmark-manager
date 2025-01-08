@@ -16,7 +16,7 @@ Last Updated: December 27, 2024
 - **Styling**: TailwindCSS
 
 ### Backend
-- **Framework**: FeathersJS
+- **Framework**: AdonisJS
 - **Language**: TypeScript
 - **Database**: Sqlite
 
@@ -51,24 +51,72 @@ cd frontend-sveltekit
 npm install
 ```
 
-3. Install backend dependencies:
+3. Install AdonisJS globally:
 ```bash
-cd ../backend-feathers
+npm i -g @adonisjs/cli
+```
+
+4. Navigate to the backend directory:
+```bash
+cd backend-adonis
+```
+
+5. Install the dependencies:
+```bash
 npm install
 ```
 
-### Development
+## Running the Application
 
-1. Start the backend server:
+To start the AdonisJS server, run:
 ```bash
-cd backend-feathers
+npm start
+```
+
+To run the application in development mode with hot module replacement, use:
+```bash
 npm run dev
 ```
 
-2. Start the frontend development server:
+## Development
+
+1. Start the frontend development server:
 ```bash
 cd frontend-sveltekit
 npm run dev
+```
+
+## Introduction to AdonisJS
+AdonisJS is a Node.js MVC framework that is designed to make building web applications and APIs enjoyable and efficient. It provides a rich ecosystem and a powerful set of tools to help developers create scalable applications.
+
+## Configuration
+Ensure that you configure your `.env` file according to your environment settings. You may need to set up database connections and other environment variables.
+
+## API Endpoints
+Refer to the documentation for the updated API endpoints and their usage.
+
+## Testing
+AdonisJS comes with built-in support for testing. You can run your tests using:
+```bash
+npm test
+```
+
+## Linting
+To check for code quality issues, run:
+```bash
+npm run lint
+```
+
+## Formatting
+To format the code, use:
+```bash
+npm run format
+```
+
+## Type Checking
+To perform type checking, run:
+```bash
+npm run typecheck
 ```
 
 ## Project Structure
@@ -79,7 +127,7 @@ bookmark-manager/
 │   ├── src/              # Source code
 │   ├── static/           # Static assets
 │   └── tests/            # Frontend tests
-└── backend-feathers/     # Backend API server
+└── backend-adonis/       # Backend API server
     ├── src/             # Source code
     ├── config/          # Configuration files
     └── test/            # Backend tests
